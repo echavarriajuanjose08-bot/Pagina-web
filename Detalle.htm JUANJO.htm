@@ -1,0 +1,2104 @@
+
+
+<!DOCTYPE html>
+<html lang="es-CO" dir="ltr">
+<head>
+    <meta charset="utf-8" />
+    <title>DESARROLLO DE P&#193;GINAS WEB_SI_1.2_S_SEMESTRAL2026B</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Q10">
+    <meta name="author" content="Q10 S.A.S.">
+    <meta name="version" content="1.0.0.0" />
+    <meta name="q10:version" content="515" />
+    <meta name="q10:menu_cache" content="true" />
+    <meta name="q10:tenant" content="JackAWS-Production" />
+
+    <meta name="accept-language" content="es-CO">
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+            var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true; j.src = 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window, document, 'script', 'dataLayer', 'GTM-MFP6P8SP');
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <link href="/Content/main?v=5CWqv3SwqZEIXq8Vjq8V8e9ckigiSFS11FI5KQAe3pM1" rel="stylesheet"/>
+
+    <link href="/Content/fontawesome?v=3iEv8vqPidB6TVfgNOGrLoJr-SPH_mV3YwpggEk2_ao1" rel="stylesheet"/>
+
+    <link rel="stylesheet" href="https://i.icomoon.io/public/dee811bf7b/Jack/style.css">
+    <link href="/Content/bootstrap-select?v=zwY2pIUSBFsK-xonr3bwjzKnYTAqHt15bLkXaRw1bVo1" rel="stylesheet"/>
+
+    <link href="/Content/selectize?v=1ujbpDdJjDgAkra_64EQYKKELi0SOPb7BEM08ef5Hi01" rel="stylesheet"/>
+
+    <link href="/Content/datetimepicker?v=DdKtPaKMoH6hzSMgdMlYqXqzqtctw-AmdvEbaWRiGbU1" rel="stylesheet"/>
+
+    <link href="/Content/jqueryfileupload?v=MDe7BU8mrPuN8v81OAkRk39PaZFzeGyoV51n5LUrIAA1" rel="stylesheet"/>
+
+    <link href="/Content/sweet-alert?v=wJoMuT6wbVJ9gJgVxYej0aU3f1GkOdTTNFNQkm3wl4k1" rel="stylesheet"/>
+
+    <link href="/Content/jqueryfancybox?v=PjYjLNAJVdbN5DNF-JkgMKMr1aRw1ORNH6sZnZr27T01" rel="stylesheet"/>
+
+    <link href="/Content/bootstrap-slider?v=nU4TyHDPwwOHDtfGOvc02HPoHwgVp8wOsUcMNkiq6K01" rel="stylesheet"/>
+
+    <link href="/Content/comunidad/personas/capturaFoto?v=MRljIOcqWbIZId1StRjQ-YzS0cNfbptKIlDzjRYx3S41" rel="stylesheet"/>
+
+    <link href="/Content/guided/tour?v=fLb5CGCH8n2362e00DTJbrScKVGfLnj2X1qCfw6lKpY1" rel="stylesheet"/>
+
+    <link href="/Content/cke5?v=CdCH2gA1UYY2DfmLScK8pAIuN6-6Dh0cz9QOrXnOPXs1" rel="stylesheet"/>
+
+    <link href="/Content/plyr?v=Dkp6NeIBwgq9BnhTvo8PSG21f-ZPsd21Hqw8Tw9maMs1" rel="stylesheet"/>
+
+
+        <style>
+            :root {
+                --institutional-color: #ee3142;
+                --institutional-light-color: #F15A67;
+                --institutional-dark-color: #BE2734;
+                --purple-color: #563B8A;
+                --success-bg-color: #ddeadc;
+                --success-dark-color: #347037;
+                --info-bg-color: #d3e7f0;
+                --info-dark-color: #003656;
+                --warn-bg-color: #f5eec7;
+                --warn-dark-color: #484635;
+                --dang-bg-color: #f2dede;
+                --dang-dark-color: #a94442;
+                --border-radius-medium: 8px;
+                --border-radius-small: 4px;
+            }
+
+            footer,.q10navbar,.q10button.btn-primary,.modal-header,.popover-title,.q10color-entidad {
+                background-color: #ee3142 ;
+            }
+            .q10button.btn-primary {
+                border-color: #BE2734 ;
+            }
+            .q10button.btn-primary:hover,.q10button.btn-primary:focus {
+                background-color: #F15A67 ;
+            }
+            .q10navbar .navbar-nav .open > a, .q10navbar .navbar-nav .open > a:hover, .q10navbar .navbar-nav .open > a:focus,.q10navbar .navbar-nav > li > a:hover {
+                background-color: #F15A67 !important;
+            }
+
+            @media (max-width: 767px) {
+                .q10navbar .navbar-nav .open .dropdown-menu .divider {
+                    background-color: #BE2734 !important;
+                }
+                .search-form {
+                    padding-right: 0px;
+                    width: 100%;
+                }
+
+                .navbar-collapse .space-sm{
+                    margin-bottom: 20px;
+                }
+            }
+
+            .slider-selection {
+                background: #F15A67 !important;
+            }
+
+            .open > .dropdown-toggle.btn-primary.q10button  {
+                color: #fff;
+                background-color: #F15A67;
+                border-color: #F15A67;
+            }
+
+            .sweet-alert {
+                padding-bottom: 24px;
+            }
+
+            .sweet-alert h2{
+                margin-top: 5px !important;
+            }
+
+            .sweet-alert button.confirm  {
+                color: #fff;
+                background-color: #ee3142 !important;
+                border-color: #ee3142 !important;
+            }
+
+            .sweet-alert button.confirm:hover  {
+                color: #fff;
+                background-color: #F15A67 !important;
+                border-color: #F15A67 !important;
+            }
+
+            .popover.tour .popover-close {
+                color: #F15A67 !important;
+            }
+
+            .popover.tour .popover-navigation .btn {
+                border-color: #F15A67 !important;
+                background-color: #F15A67 !important;
+            }
+        </style>
+    <link href="/Content/notifications?v=ZM2Dv7baG-M6nWWyTDcxm5etfA_4Xl2adCI-hepa_E81" rel="stylesheet"/>
+
+
+    
+
+            <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+            <script>
+                var googletag = googletag || {};
+                googletag.cmd = googletag.cmd || [];
+            </script>
+            <script>
+                googletag.cmd.push(function () {
+                    googletag.defineSlot('/6622005/Jack_Estudiantes', [160, 600], 'div-gpt-ad-1552496341866-0').addService(googletag.pubads());
+                    googletag.pubads().enableSingleRequest();
+                    googletag.enableServices();
+                });
+            </script>
+
+
+    
+    
+
+    <link href="/Content/EducacionVirtual?v=A2Z2lmpeswLLS6U9aMpGui7Wq3OOH3Pd3DQUzreziVM1" rel="stylesheet"/>
+
+    <link href="/Content/app/dragula?v=TCFToXHieMWB9JEhFBl0tFmNpR1d0hWbjc_6eR0C2HY1" rel="stylesheet"/>
+
+    <link href="/Content/bootstrapswitch?v=RNrg-CqsRD049sPrnioX2la8jfv5isJG47Tfpuqt9NE1" rel="stylesheet"/>
+
+    <link href="/Content/daterangepicker?v=71yp6tKwCmtxNxHrzo-5rpJKGTzVLJcbEsMqCPLKOOQ1" rel="stylesheet"/>
+
+
+
+
+
+
+    
+    <link href="/favicon_q10.ico?v=2" rel="shortcut icon" type="image/x-icon" />
+    <style>
+        #link-masker {
+            position: absolute;
+            z-index: 99999;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+        }
+
+        body div[data-notify="container"] {
+            z-index: 9999 !important;
+            position: fixed !important;
+            top: 70px !important;
+        }
+    </style>
+
+
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MFP6P8SP"
+                height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    
+    <div id="link-masker"></div>
+    
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-inverse q10navbar">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/">
+                <img src="https://q10storage.blob.core.windows.net/q10academico-public/045449985633/045449985633.png?nocache" style="background-color:#fff;" />
+        </a>
+    </div>
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <div class="space-sm"></div>
+                <div class="navbar-left" style="width:150px; padding-left:150px; padding: 10px 0px;">
+                </div>
+<ul class="nav navbar-nav"><li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="javascript:;">Institucional&nbsp;<b class='caret'></b></a>
+<div class="dropdown-wrapper"><ul class="dropdown-menu"><li><a href="/EditarEstudiante">Actualización de información</a></li><li class="dropdown-submenu"><a href="javascript:;">Estudiantes&nbsp;<b class='caret visible-xs-inline-block'></b></a>
+<div class="dropdown-wrapper"><ul class="dropdown-menu"><li class="divider"></li><li><a href="/Observador">Observador</a></li></ul></div></li><li class="dropdown-submenu"><a href="javascript:;">Solicitudes&nbsp;<b class='caret visible-xs-inline-block'></b></a>
+<div class="dropdown-wrapper"><ul class="dropdown-menu"><li><a href="/SolicitudesInstitucionales/NuevaSolicitudEstudiante">Crear solicitud</a></li><li><a href="/SolicitudesInstitucionales/Estudiante/Consultar">Consultar solicitudes</a></li></ul></div></li><li class="dropdown-submenu"><a href="javascript:;">Bienestar institucional&nbsp;<b class='caret visible-xs-inline-block'></b></a>
+<div class="dropdown-wrapper"><ul class="dropdown-menu"><li><a href="/Encuesta/Responder">Responder encuestas</a></li><li><a href="/OfertasLaborales">Ofertas laborales</a></li></ul></div></li></ul></div></li><li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="javascript:;">Académico&nbsp;<b class='caret'></b></a>
+<div class="dropdown-wrapper"><ul class="dropdown-menu"><li><a href="/Horario">Horarios</a></li><li><a href="/Prematricula">Prematrículas</a></li><li class="dropdown-submenu"><a href="javascript:;">Educación virtual&nbsp;<b class='caret visible-xs-inline-block'></b></a>
+<div class="dropdown-wrapper"><ul class="dropdown-menu"><li><a href="/EducacionVirtual/v3/CursosVirtuales/Estudiante">Cursos virtuales</a></li><li><a href="/AulasVirtuales">Aulas virtuales</a></li></ul></div></li></ul></div></li><li><a href="/ResultadosEstudiante">Resultados de evaluación</a></li><li><a href="/EstadoCuenta">Estado de cuenta</a></li></ul>        <ul class="nav navbar-nav navbar-right">
+
+                <li>
+                    <a href="javascript: jack.chat.open()" class="open-chat" style="padding: 15px 11px 15px 10px;font-size: 19px;">
+                        <i class="fa fa-comments notification-icon" data-count="0" style="color: rgba(255, 255, 255, 0.8);"></i>
+                    </a>
+                </li>
+
+            
+
+<input id="bloqueoDependencias" name="bloqueoDependencias" type="hidden" value="False" />
+
+    <li class="dropdown dropdown-notifications">
+        <a href="#notifications-panel" class="dropdown-toggle" data-toggle="dropdown" title="Notificaciones">
+            <i data-count="0" class="glyphicon glyphicon-bell notification-icon"></i>
+        </a>
+        <div class="dropdown-container dropdown-position-bottomright">
+            <div class="dropdown-toolbar notifications-title">
+                Notificaciones
+            </div>
+            <ul class="dropdown-menu notifications">
+                        <li class="notification" style="cursor:pointer" data-href="/EducacionVirtual/v3/CursosVirtuales/43475684/Detalle#2_88206948" data-id="5126622" title="" data-toggle="" data-container="body">
+                            <div class="media">
+                                <div class="media-body">
+                                    
+                                        <span class="notification-title "><i class="fa fa-info-circle"></i> Nuevo recurso</span>
+                                    <p class="notification-desc">Se publicó un nuevo recurso <b>Semana 7 Documental para ver en clase</b> en el curso <b>INFORMÁTICA_SI_1.2.4_S_SEMESTRAL2026B</b>.</p>
+
+                                    <div class="notification-meta">
+                                        <small class="timestamp contextual-date" data-date="2026-10-16 23:07:28">16/10/2026 11:07:28 p.m.</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="notification" style="cursor:pointer" data-href="/EducacionVirtual/v3/CursosVirtuales/20220303/Detalle#4_15215056" data-id="5126533" title="" data-toggle="" data-container="body">
+                            <div class="media">
+                                <div class="media-body">
+                                    
+                                        <span class="notification-title "><i class="fa fa-info-circle"></i> Nuevo recurso</span>
+                                    <p class="notification-desc">Se publicó un nuevo recurso <b>Como Subir Página web a Github</b> en el curso <b>DESARROLLO DE PÁGINAS WEB_SI_1.2_S_SEMESTRAL2026B</b>.</p>
+
+                                    <div class="notification-meta">
+                                        <small class="timestamp contextual-date" data-date="2026-10-16 23:01:23">16/10/2026 11:01:23 p.m.</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="notification" style="cursor:pointer" data-href="/EducacionVirtual/v3/CursosVirtuales/20220303/Detalle#2_17854541" data-id="5126514" title="" data-toggle="" data-container="body">
+                            <div class="media">
+                                <div class="media-body">
+                                    
+                                        <span class="notification-title "><i class="fa fa-info-circle"></i> Nuevo recurso</span>
+                                    <p class="notification-desc">Se publicó un nuevo recurso <b>Semana 7 Subir Página web a Github Pages</b> en el curso <b>DESARROLLO DE PÁGINAS WEB_SI_1.2_S_SEMESTRAL2026B</b>.</p>
+
+                                    <div class="notification-meta">
+                                        <small class="timestamp contextual-date" data-date="2026-10-16 23:00:53">16/10/2026 11:00:53 p.m.</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="notification" style="cursor:pointer" data-href="/EducacionVirtual/v3/CursosVirtuales/90446641/Detalle#4_16459337" data-id="5126417" title="" data-toggle="" data-container="body">
+                            <div class="media">
+                                <div class="media-body">
+                                    
+                                        <span class="notification-title "><i class="fa fa-info-circle"></i> Nuevo recurso</span>
+                                    <p class="notification-desc">Se publicó un nuevo recurso <b>Semana 7 Algoritmos Condicionales Python</b> en el curso <b>FUNDAMENTOS DE PROGRAMACIÓN_SI_1.2_S_Semestral2026A1</b>.</p>
+
+                                    <div class="notification-meta">
+                                        <small class="timestamp contextual-date" data-date="2026-10-16 22:54:06">16/10/2026 10:54:06 p.m.</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="notification" style="cursor:pointer" data-href="/EducacionVirtual/v3/CursosVirtuales/90446641/Detalle#7_15488138" data-id="5126398" title="" data-toggle="" data-container="body">
+                            <div class="media">
+                                <div class="media-body">
+                                    
+                                        <span class="notification-title "><i class="fa fa-info-circle"></i> Nuevo recurso</span>
+                                    <p class="notification-desc">Se publicó un nuevo recurso <b>Semana 7 Ejercicios Sentencias</b> en el curso <b>FUNDAMENTOS DE PROGRAMACIÓN_SI_1.2_S_Semestral2026A1</b>.</p>
+
+                                    <div class="notification-meta">
+                                        <small class="timestamp contextual-date" data-date="2026-10-16 22:50:45">16/10/2026 10:50:45 p.m.</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="notification" style="cursor:pointer" data-href="/EducacionVirtual/v3/CursosVirtuales/90446641/Detalle#4_14593546" data-id="5126379" title="" data-toggle="" data-container="body">
+                            <div class="media">
+                                <div class="media-body">
+                                    
+                                        <span class="notification-title "><i class="fa fa-info-circle"></i> Nuevo recurso</span>
+                                    <p class="notification-desc">Se publicó un nuevo recurso <b>Semana 7 Sentencias y Condicionales</b> en el curso <b>FUNDAMENTOS DE PROGRAMACIÓN_SI_1.2_S_Semestral2026A1</b>.</p>
+
+                                    <div class="notification-meta">
+                                        <small class="timestamp contextual-date" data-date="2026-10-16 22:49:18">16/10/2026 10:49:18 p.m.</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="notification" style="cursor:pointer" data-href="/EducacionVirtual/v3/CursosVirtuales/90446641/Detalle#2_11815479" data-id="5126360" title="" data-toggle="" data-container="body">
+                            <div class="media">
+                                <div class="media-body">
+                                    
+                                        <span class="notification-title "><i class="fa fa-info-circle"></i> Nuevo recurso</span>
+                                    <p class="notification-desc">Se publicó un nuevo recurso <b>Semana 7 Clase If, Elif, Else</b> en el curso <b>FUNDAMENTOS DE PROGRAMACIÓN_SI_1.2_S_Semestral2026A1</b>.</p>
+
+                                    <div class="notification-meta">
+                                        <small class="timestamp contextual-date" data-date="2026-10-16 22:48:26">16/10/2026 10:48:26 p.m.</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="notification" style="cursor:pointer" data-href="/EducacionVirtual/v3/CursosVirtuales/34553869/Detalle#Anuncios_87900" data-id="5126212" title="" data-toggle="" data-container="body">
+                            <div class="media">
+                                <div class="media-body">
+                                    
+                                        <span class="notification-title "><i class="fa fa-info-circle"></i> Publicación de anuncio</span>
+                                    <p class="notification-desc">Se ha publicado un anuncio para el curso virtual <b>SERVICIO AL CLIENTE_CI.SI_1.3.4_S_SEMESTRAL2026B</b>.</p>
+
+                                    <div class="notification-meta">
+                                        <small class="timestamp contextual-date" data-date="2026-10-16 20:29:59">16/10/2026 8:29:59 p.m.</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="notification" style="cursor:pointer" data-href="/EducacionVirtual/v3/CursosVirtuales/45718358/Detalle#Anuncios_87896" data-id="5126103" title="" data-toggle="" data-container="body">
+                            <div class="media">
+                                <div class="media-body">
+                                    
+                                        <span class="notification-title "><i class="fa fa-info-circle"></i> Publicación de anuncio</span>
+                                    <p class="notification-desc">Se ha publicado un anuncio para el curso virtual <b>INGLES I_CE.CI.DG.CF.SO.SI.MD_1_S_SEMESTRAL2026B</b>.</p>
+
+                                    <div class="notification-meta">
+                                        <small class="timestamp contextual-date" data-date="2026-10-16 20:26:34">16/10/2026 8:26:34 p.m.</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="notification" style="cursor:pointer" data-href="/EducacionVirtual/v3/CursosVirtuales/43475684/Detalle#4_10738224" data-id="5116911" title="" data-toggle="" data-container="body">
+                            <div class="media">
+                                <div class="media-body">
+                                    
+                                        <span class="notification-title "><i class="fa fa-info-circle"></i> Nuevo recurso</span>
+                                    <p class="notification-desc">Se publicó un nuevo recurso <b>Semana 6 Formatear Equipo con Windows 11</b> en el curso <b>INFORMÁTICA_SI_1.2.4_S_SEMESTRAL2026B</b>.</p>
+
+                                    <div class="notification-meta">
+                                        <small class="timestamp contextual-date" data-date="2026-10-08 00:33:29">8/10/2026 12:33:29 a.m.</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="notification" style="cursor:pointer" data-href="/EducacionVirtual/v3/CursosVirtuales/43475684/Detalle#4_21731729" data-id="5116888" title="" data-toggle="" data-container="body">
+                            <div class="media">
+                                <div class="media-body">
+                                    
+                                        <span class="notification-title "><i class="fa fa-info-circle"></i> Nuevo recurso</span>
+                                    <p class="notification-desc">Se publicó un nuevo recurso <b>Semana 6 Entorno de Windows  y Herramientas del Sistema </b> en el curso <b>INFORMÁTICA_SI_1.2.4_S_SEMESTRAL2026B</b>.</p>
+
+                                    <div class="notification-meta">
+                                        <small class="timestamp contextual-date" data-date="2026-10-08 00:32:57">8/10/2026 12:32:57 a.m.</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="notification" style="cursor:pointer" data-href="/EducacionVirtual/v3/CursosVirtuales/90446641/Detalle#2_19919640" data-id="5116764" title="" data-toggle="" data-container="body">
+                            <div class="media">
+                                <div class="media-body">
+                                    
+                                        <span class="notification-title "><i class="fa fa-info-circle"></i> Nuevo recurso</span>
+                                    <p class="notification-desc">Se publicó un nuevo recurso <b>Curso Visual Studio Code</b> en el curso <b>FUNDAMENTOS DE PROGRAMACIÓN_SI_1.2_S_Semestral2026A1</b>.</p>
+
+                                    <div class="notification-meta">
+                                        <small class="timestamp contextual-date" data-date="2026-10-08 00:27:56">8/10/2026 12:27:56 a.m.</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="notification" style="cursor:pointer" data-href="/EducacionVirtual/v3/CursosVirtuales/20220303/Detalle#4_65623020" data-id="5116651" title="" data-toggle="" data-container="body">
+                            <div class="media">
+                                <div class="media-body">
+                                    
+                                        <span class="notification-title "><i class="fa fa-info-circle"></i> Nuevo recurso</span>
+                                    <p class="notification-desc">Se publicó un nuevo recurso <b>Semana 6 Proyectos Interactivos Javascript</b> en el curso <b>DESARROLLO DE PÁGINAS WEB_SI_1.2_S_SEMESTRAL2026B</b>.</p>
+
+                                    <div class="notification-meta">
+                                        <small class="timestamp contextual-date" data-date="2026-10-08 00:19:09">8/10/2026 12:19:09 a.m.</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="notification" style="cursor:pointer" data-href="/EducacionVirtual/v3/CursosVirtuales/20220303/Detalle#4_14975089" data-id="5116630" title="" data-toggle="" data-container="body">
+                            <div class="media">
+                                <div class="media-body">
+                                    
+                                        <span class="notification-title "><i class="fa fa-info-circle"></i> Nuevo recurso</span>
+                                    <p class="notification-desc">Se publicó un nuevo recurso <b>Semana 6 Fundamentos Javascript</b> en el curso <b>DESARROLLO DE PÁGINAS WEB_SI_1.2_S_SEMESTRAL2026B</b>.</p>
+
+                                    <div class="notification-meta">
+                                        <small class="timestamp contextual-date" data-date="2026-10-08 00:18:30">8/10/2026 12:18:30 a.m.</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="notification" style="cursor:pointer" data-href="/EducacionVirtual/v3/CursosVirtuales/20220303/Detalle#2_14548242" data-id="5116607" title="" data-toggle="" data-container="body">
+                            <div class="media">
+                                <div class="media-body">
+                                    
+                                        <span class="notification-title "><i class="fa fa-info-circle"></i> Nuevo recurso</span>
+                                    <p class="notification-desc">Se publicó un nuevo recurso <b>Semana 6 Validación de Formularios Js</b> en el curso <b>DESARROLLO DE PÁGINAS WEB_SI_1.2_S_SEMESTRAL2026B</b>.</p>
+
+                                    <div class="notification-meta">
+                                        <small class="timestamp contextual-date" data-date="2026-10-08 00:17:08">8/10/2026 12:17:08 a.m.</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="notification" style="cursor:pointer" data-href="/EducacionVirtual/v3/CursosVirtuales/20220303/Detalle#2_99254087" data-id="5116588" title="" data-toggle="" data-container="body">
+                            <div class="media">
+                                <div class="media-body">
+                                    
+                                        <span class="notification-title "><i class="fa fa-info-circle"></i> Nuevo recurso</span>
+                                    <p class="notification-desc">Se publicó un nuevo recurso <b>Semana 6 Arrays y Objetos</b> en el curso <b>DESARROLLO DE PÁGINAS WEB_SI_1.2_S_SEMESTRAL2026B</b>.</p>
+
+                                    <div class="notification-meta">
+                                        <small class="timestamp contextual-date" data-date="2026-10-08 00:16:08">8/10/2026 12:16:08 a.m.</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="notification" style="cursor:pointer" data-href="/EducacionVirtual/v3/CursosVirtuales/90446641/Detalle#5_18483253" data-id="5116544" title="" data-toggle="" data-container="body">
+                            <div class="media">
+                                <div class="media-body">
+                                    
+                                        <span class="notification-title "><i class="fa fa-info-circle"></i> Comentario en tarea</span>
+                                    <p class="notification-desc"><b>SEBASTIAN VASQUEZ</b> ha comentado tu respuesta a la tarea <b>Tarea Pseint</b> del curso <b>FUNDAMENTOS DE PROGRAMACIÓN_SI_1.2_S_Semestral2026A1</b>.</p>
+
+                                    <div class="notification-meta">
+                                        <small class="timestamp contextual-date" data-date="2026-10-08 00:05:08">8/10/2026 12:05:08 a.m.</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="notification" style="cursor:pointer" data-href="/EducacionVirtual/v3/CursosVirtuales/34553869/Detalle#5_51569889" data-id="5116397" title="" data-toggle="" data-container="body">
+                            <div class="media">
+                                <div class="media-body">
+                                    
+                                        <span class="notification-title "><i class="fa fa-info-circle"></i> Comentario en tarea</span>
+                                    <p class="notification-desc"><b>Oscar Valle</b> ha comentado tu respuesta a la tarea <b>CASOS SERVICIO AL CLIENTE</b> del curso <b>SERVICIO AL CLIENTE_CI.SI_1.3.4_S_SEMESTRAL2026B</b>.</p>
+
+                                    <div class="notification-meta">
+                                        <small class="timestamp contextual-date" data-date="2026-10-07 22:51:14">7/10/2026 10:51:14 p.m.</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="notification" style="cursor:pointer" data-href="/EducacionVirtual/v3/CursosVirtuales/45718358/Detalle#5_18359561" data-id="5116047" title="" data-toggle="" data-container="body">
+                            <div class="media">
+                                <div class="media-body">
+                                    
+                                        <span class="notification-title "><i class="fa fa-info-circle"></i> Comentario en tarea</span>
+                                    <p class="notification-desc"><b>Oscar Valle</b> ha comentado tu respuesta a la tarea <b>PARA EL EXAMEN</b> del curso <b>INGLES I_CE.CI.DG.CF.SO.SI.MD_1_S_SEMESTRAL2026B</b>.</p>
+
+                                    <div class="notification-meta">
+                                        <small class="timestamp contextual-date" data-date="2026-10-07 12:36:40">7/10/2026 12:36:40 p.m.</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="notification" style="cursor:pointer" data-href="/EducacionVirtual/v3/CursosVirtuales/32369106/Detalle#5_75591095" data-id="5112476" title="" data-toggle="" data-container="body">
+                            <div class="media">
+                                <div class="media-body">
+                                    
+                                        <span class="notification-title "><i class="fa fa-info-circle"></i> Nuevo recurso</span>
+                                    <p class="notification-desc">Se publicó un nuevo recurso <b>El vestido del lenguaje</b> en el curso <b>HABILIDADES DE LA COMUNICACIÓN_CE.DG.CF.SOSI.MD.CI_1_S_SEMESTRAL2026B</b>.</p>
+
+                                    <div class="notification-meta">
+                                        <small class="timestamp contextual-date" data-date="2026-10-03 13:57:15">3/10/2026 1:57:15 p.m.</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="notification" style="cursor:pointer" data-href="/EducacionVirtual/v3/CursosVirtuales/45718358/Detalle#5_19146476" data-id="5107063" title="" data-toggle="" data-container="body">
+                            <div class="media">
+                                <div class="media-body">
+                                    
+                                        <span class="notification-title "><i class="fa fa-info-circle"></i> Nuevo recurso</span>
+                                    <p class="notification-desc">Se publicó un nuevo recurso <b>Verbos regulares e irregulares</b> en el curso <b>INGLES I_CE.CI.DG.CF.SO.SI.MD_1_S_SEMESTRAL2026B</b>.</p>
+
+                                    <div class="notification-meta">
+                                        <small class="timestamp contextual-date" data-date="2026-09-29 21:48:13">29/09/2026 9:48:13 p.m.</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="notification" style="cursor:pointer" data-href="/EducacionVirtual/v3/CursosVirtuales/20220303/Detalle#5_66374713" data-id="5101446" title="" data-toggle="" data-container="body">
+                            <div class="media">
+                                <div class="media-body">
+                                    
+                                        <span class="notification-title "><i class="fa fa-info-circle"></i> Comentario en tarea</span>
+                                    <p class="notification-desc"><b>SEBASTIAN VASQUEZ</b> ha comentado tu respuesta a la tarea <b>Tarea Pagina Web </b> del curso <b>DESARROLLO DE PÁGINAS WEB_SI_1.2_S_SEMESTRAL2026B</b>.</p>
+
+                                    <div class="notification-meta">
+                                        <small class="timestamp contextual-date" data-date="2026-09-26 13:10:32">26/09/2026 1:10:32 p.m.</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="notification" style="cursor:pointer" data-href="/EducacionVirtual/v3/CursosVirtuales/90446641/Detalle#5_18483253" data-id="5101440" title="" data-toggle="" data-container="body">
+                            <div class="media">
+                                <div class="media-body">
+                                    
+                                        <span class="notification-title "><i class="fa fa-info-circle"></i> Nuevo recurso</span>
+                                    <p class="notification-desc">Se publicó un nuevo recurso <b>Tarea Pseint</b> en el curso <b>FUNDAMENTOS DE PROGRAMACIÓN_SI_1.2_S_Semestral2026A1</b>.</p>
+
+                                    <div class="notification-meta">
+                                        <small class="timestamp contextual-date" data-date="2026-09-26 13:08:06">26/09/2026 1:08:06 p.m.</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="notification" style="cursor:pointer" data-href="/EducacionVirtual/v3/CursosVirtuales/90446641/Detalle#7_18876229" data-id="5101395" title="" data-toggle="" data-container="body">
+                            <div class="media">
+                                <div class="media-body">
+                                    
+                                        <span class="notification-title "><i class="fa fa-info-circle"></i> Nuevo recurso</span>
+                                    <p class="notification-desc">Se publicó un nuevo recurso <b>Link Para Descargar Pseint</b> en el curso <b>FUNDAMENTOS DE PROGRAMACIÓN_SI_1.2_S_Semestral2026A1</b>.</p>
+
+                                    <div class="notification-meta">
+                                        <small class="timestamp contextual-date" data-date="2026-09-26 12:53:51">26/09/2026 12:53:51 p.m.</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="notification" style="cursor:pointer" data-href="/EducacionVirtual/v3/CursosVirtuales/90446641/Detalle#4_12993653" data-id="5101375" title="" data-toggle="" data-container="body">
+                            <div class="media">
+                                <div class="media-body">
+                                    
+                                        <span class="notification-title "><i class="fa fa-info-circle"></i> Nuevo recurso</span>
+                                    <p class="notification-desc">Se publicó un nuevo recurso <b>Libro Lógica de Programación  (Omar Iván Trejos)</b> en el curso <b>FUNDAMENTOS DE PROGRAMACIÓN_SI_1.2_S_Semestral2026A1</b>.</p>
+
+                                    <div class="notification-meta">
+                                        <small class="timestamp contextual-date" data-date="2026-09-26 12:47:13">26/09/2026 12:47:13 p.m.</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="notification" style="cursor:pointer" data-href="/EducacionVirtual/v3/CursosVirtuales/32369106/Detalle#5_53833109" data-id="5100400" title="" data-toggle="" data-container="body">
+                            <div class="media">
+                                <div class="media-body">
+                                    
+                                        <span class="notification-title "><i class="fa fa-info-circle"></i> Nuevo recurso</span>
+                                    <p class="notification-desc">Se publicó un nuevo recurso <b>Parcial 1 - Salto al vacio</b> en el curso <b>HABILIDADES DE LA COMUNICACIÓN_CE.DG.CF.SOSI.MD.CI_1_S_SEMESTRAL2026B</b>.</p>
+
+                                    <div class="notification-meta">
+                                        <small class="timestamp contextual-date" data-date="2026-09-26 07:58:53">26/09/2026 7:58:53 a.m.</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="notification" style="cursor:pointer" data-href="/EducacionVirtual/v3/CursosVirtuales/90446641/Detalle#4_29111754" data-id="5100149" title="" data-toggle="" data-container="body">
+                            <div class="media">
+                                <div class="media-body">
+                                    
+                                        <span class="notification-title "><i class="fa fa-info-circle"></i> Nuevo recurso</span>
+                                    <p class="notification-desc">Se publicó un nuevo recurso <b>Clase Algoritmos Python</b> en el curso <b>FUNDAMENTOS DE PROGRAMACIÓN_SI_1.2_S_Semestral2026A1</b>.</p>
+
+                                    <div class="notification-meta">
+                                        <small class="timestamp contextual-date" data-date="2026-09-25 23:35:13">25/09/2026 11:35:13 p.m.</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="notification" style="cursor:pointer" data-href="/EducacionVirtual/v3/CursosVirtuales/90446641/Detalle#2_12689639" data-id="5100129" title="" data-toggle="" data-container="body">
+                            <div class="media">
+                                <div class="media-body">
+                                    
+                                        <span class="notification-title "><i class="fa fa-info-circle"></i> Nuevo recurso</span>
+                                    <p class="notification-desc">Se publicó un nuevo recurso <b>Para Aprender Logica de Programación</b> en el curso <b>FUNDAMENTOS DE PROGRAMACIÓN_SI_1.2_S_Semestral2026A1</b>.</p>
+
+                                    <div class="notification-meta">
+                                        <small class="timestamp contextual-date" data-date="2026-09-25 23:33:51">25/09/2026 11:33:51 p.m.</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="notification" style="cursor:pointer" data-href="/EducacionVirtual/v3/CursosVirtuales/43475684/Detalle#5_13973945" data-id="5099909" title="" data-toggle="" data-container="body">
+                            <div class="media">
+                                <div class="media-body">
+                                    
+                                        <span class="notification-title "><i class="fa fa-info-circle"></i> Nuevo recurso</span>
+                                    <p class="notification-desc">Se publicó un nuevo recurso <b>Parcial 1 Informática</b> en el curso <b>INFORMÁTICA_SI_1.2.4_S_SEMESTRAL2026B</b>.</p>
+
+                                    <div class="notification-meta">
+                                        <small class="timestamp contextual-date" data-date="2026-09-25 23:08:46">25/09/2026 11:08:46 p.m.</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="notification" style="cursor:pointer" data-href="/EducacionVirtual/v3/CursosVirtuales/20220303/Detalle#5_66374713" data-id="5099889" title="" data-toggle="" data-container="body">
+                            <div class="media">
+                                <div class="media-body">
+                                    
+                                        <span class="notification-title "><i class="fa fa-info-circle"></i> Nuevo recurso</span>
+                                    <p class="notification-desc">Se publicó un nuevo recurso <b>Tarea Pagina Web </b> en el curso <b>DESARROLLO DE PÁGINAS WEB_SI_1.2_S_SEMESTRAL2026B</b>.</p>
+
+                                    <div class="notification-meta">
+                                        <small class="timestamp contextual-date" data-date="2026-09-25 23:06:29">25/09/2026 11:06:29 p.m.</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="notification" style="cursor:pointer" data-href="/EducacionVirtual/v3/CursosVirtuales/20220303/Detalle#7_15298374" data-id="5099866" title="" data-toggle="" data-container="body">
+                            <div class="media">
+                                <div class="media-body">
+                                    
+                                        <span class="notification-title "><i class="fa fa-info-circle"></i> Nuevo recurso</span>
+                                    <p class="notification-desc">Se publicó un nuevo recurso <b>Parcial Paginas Web vale 20%</b> en el curso <b>DESARROLLO DE PÁGINAS WEB_SI_1.2_S_SEMESTRAL2026B</b>.</p>
+
+                                    <div class="notification-meta">
+                                        <small class="timestamp contextual-date" data-date="2026-09-25 22:59:08">25/09/2026 10:59:08 p.m.</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="notification" style="cursor:pointer" data-href="/EducacionVirtual/v3/CursosVirtuales/45718358/Detalle#Anuncios_87158" data-id="5097163" title="" data-toggle="" data-container="body">
+                            <div class="media">
+                                <div class="media-body">
+                                    
+                                        <span class="notification-title "><i class="fa fa-info-circle"></i> Publicación de anuncio</span>
+                                    <p class="notification-desc">Se ha publicado un anuncio para el curso virtual <b>INGLES I_CE.CI.DG.CF.SO.SI.MD_1_S_SEMESTRAL2026B</b>.</p>
+
+                                    <div class="notification-meta">
+                                        <small class="timestamp contextual-date" data-date="2026-09-23 17:02:34">23/09/2026 5:02:34 p.m.</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="notification" style="cursor:pointer" data-href="/EducacionVirtual/v3/CursosVirtuales/34553869/Detalle#Anuncios_87156" data-id="5097094" title="" data-toggle="" data-container="body">
+                            <div class="media">
+                                <div class="media-body">
+                                    
+                                        <span class="notification-title "><i class="fa fa-info-circle"></i> Publicación de anuncio</span>
+                                    <p class="notification-desc">Se ha publicado un anuncio para el curso virtual <b>SERVICIO AL CLIENTE_CI.SI_1.3.4_S_SEMESTRAL2026B</b>.</p>
+
+                                    <div class="notification-meta">
+                                        <small class="timestamp contextual-date" data-date="2026-09-23 17:00:22">23/09/2026 5:00:22 p.m.</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="notification" style="cursor:pointer" data-href="/EducacionVirtual/v3/CursosVirtuales/43475684/Detalle#2_10038544" data-id="5094776" title="" data-toggle="" data-container="body">
+                            <div class="media">
+                                <div class="media-body">
+                                    
+                                        <span class="notification-title "><i class="fa fa-info-circle"></i> Nuevo recurso</span>
+                                    <p class="notification-desc">Se publicó un nuevo recurso <b>Video de ejercicio de excel visto en clase</b> en el curso <b>INFORMÁTICA_SI_1.2.4_S_SEMESTRAL2026B</b>.</p>
+
+                                    <div class="notification-meta">
+                                        <small class="timestamp contextual-date" data-date="2026-09-21 23:36:17">21/09/2026 11:36:17 p.m.</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="notification" style="cursor:pointer" data-href="/EducacionVirtual/v3/CursosVirtuales/45718358/Detalle#5_18359561" data-id="5092466" title="" data-toggle="" data-container="body">
+                            <div class="media">
+                                <div class="media-body">
+                                    
+                                        <span class="notification-title "><i class="fa fa-info-circle"></i> Nuevo recurso</span>
+                                    <p class="notification-desc">Se publicó un nuevo recurso <b>PARA EL EXAMEN</b> en el curso <b>INGLES I_CE.CI.DG.CF.SO.SI.MD_1_S_SEMESTRAL2026B</b>.</p>
+
+                                    <div class="notification-meta">
+                                        <small class="timestamp contextual-date" data-date="2026-09-19 15:58:34">19/09/2026 3:58:34 p.m.</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="notification" style="cursor:pointer" data-href="/EducacionVirtual/v3/CursosVirtuales/32369106/Detalle#5_31568818" data-id="5091731" title="" data-toggle="" data-container="body">
+                            <div class="media">
+                                <div class="media-body">
+                                    
+                                        <span class="notification-title "><i class="fa fa-info-circle"></i> Nuevo recurso</span>
+                                    <p class="notification-desc">Se publicó un nuevo recurso <b>Actividad método SPAM trabajo de aula </b> en el curso <b>HABILIDADES DE LA COMUNICACIÓN_CE.DG.CF.SOSI.MD.CI_1_S_SEMESTRAL2026B</b>.</p>
+
+                                    <div class="notification-meta">
+                                        <small class="timestamp contextual-date" data-date="2026-09-19 09:08:08">19/09/2026 9:08:08 a.m.</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="notification" style="cursor:pointer" data-href="/EducacionVirtual/v3/CursosVirtuales/43475684/Detalle#4_15510179" data-id="5091399" title="" data-toggle="" data-container="body">
+                            <div class="media">
+                                <div class="media-body">
+                                    
+                                        <span class="notification-title "><i class="fa fa-info-circle"></i> Nuevo recurso</span>
+                                    <p class="notification-desc">Se publicó un nuevo recurso <b>Guía Informática </b> en el curso <b>INFORMÁTICA_SI_1.2.4_S_SEMESTRAL2026B</b>.</p>
+
+                                    <div class="notification-meta">
+                                        <small class="timestamp contextual-date" data-date="2026-09-18 23:36:32">18/09/2026 11:36:32 p.m.</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="notification" style="cursor:pointer" data-href="/EducacionVirtual/v3/CursosVirtuales/90446641/Detalle#4_70880059" data-id="5091328" title="" data-toggle="" data-container="body">
+                            <div class="media">
+                                <div class="media-body">
+                                    
+                                        <span class="notification-title "><i class="fa fa-info-circle"></i> Nuevo recurso</span>
+                                    <p class="notification-desc">Se publicó un nuevo recurso <b>Guía Fundamentos de Programación</b> en el curso <b>FUNDAMENTOS DE PROGRAMACIÓN_SI_1.2_S_Semestral2026A1</b>.</p>
+
+                                    <div class="notification-meta">
+                                        <small class="timestamp contextual-date" data-date="2026-09-18 23:34:00">18/09/2026 11:34:00 p.m.</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="notification" style="cursor:pointer" data-href="/EducacionVirtual/v3/CursosVirtuales/20220303/Detalle#4_17470972" data-id="5091281" title="" data-toggle="" data-container="body">
+                            <div class="media">
+                                <div class="media-body">
+                                    
+                                        <span class="notification-title "><i class="fa fa-info-circle"></i> Nuevo recurso</span>
+                                    <p class="notification-desc">Se publicó un nuevo recurso <b>Guía Desarrollo de Páginas Web</b> en el curso <b>DESARROLLO DE PÁGINAS WEB_SI_1.2_S_SEMESTRAL2026B</b>.</p>
+
+                                    <div class="notification-meta">
+                                        <small class="timestamp contextual-date" data-date="2026-09-18 23:31:09">18/09/2026 11:31:09 p.m.</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="notification" style="cursor:pointer" data-href="/EducacionVirtual/v3/CursosVirtuales/45718358/Detalle#5_13733936" data-id="5091240" title="" data-toggle="" data-container="body">
+                            <div class="media">
+                                <div class="media-body">
+                                    
+                                        <span class="notification-title "><i class="fa fa-info-circle"></i> Comentario en tarea</span>
+                                    <p class="notification-desc"><b>Oscar Valle</b> ha comentado tu respuesta a la tarea <b>NICE TO MEET YOU LECCIONES 1 -2</b> del curso <b>INGLES I_CE.CI.DG.CF.SO.SI.MD_1_S_SEMESTRAL2026B</b>.</p>
+
+                                    <div class="notification-meta">
+                                        <small class="timestamp contextual-date" data-date="2026-09-18 22:56:37">18/09/2026 10:56:37 p.m.</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="notification" style="cursor:pointer" data-href="/EducacionVirtual/v3/CursosVirtuales/43475684/Detalle#Anuncios_86974" data-id="5091014" title="" data-toggle="" data-container="body">
+                            <div class="media">
+                                <div class="media-body">
+                                    
+                                        <span class="notification-title "><i class="fa fa-info-circle"></i> Publicación de anuncio</span>
+                                    <p class="notification-desc">Se ha publicado un anuncio para el curso virtual <b>INFORMÁTICA_SI_1.2.4_S_SEMESTRAL2026B</b>.</p>
+
+                                    <div class="notification-meta">
+                                        <small class="timestamp contextual-date" data-date="2026-09-18 20:41:57">18/09/2026 8:41:57 p.m.</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="notification" style="cursor:pointer" data-href="/EducacionVirtual/v3/CursosVirtuales/90446641/Detalle#Anuncios_86971" data-id="5090944" title="" data-toggle="" data-container="body">
+                            <div class="media">
+                                <div class="media-body">
+                                    
+                                        <span class="notification-title "><i class="fa fa-info-circle"></i> Publicación de anuncio</span>
+                                    <p class="notification-desc">Se ha publicado un anuncio para el curso virtual <b>FUNDAMENTOS DE PROGRAMACIÓN_SI_1.2_S_Semestral2026A1</b>.</p>
+
+                                    <div class="notification-meta">
+                                        <small class="timestamp contextual-date" data-date="2026-09-18 20:40:40">18/09/2026 8:40:40 p.m.</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="notification" style="cursor:pointer" data-href="/EducacionVirtual/v3/CursosVirtuales/20220303/Detalle#Anuncios_86968" data-id="5090898" title="" data-toggle="" data-container="body">
+                            <div class="media">
+                                <div class="media-body">
+                                    
+                                        <span class="notification-title "><i class="fa fa-info-circle"></i> Publicación de anuncio</span>
+                                    <p class="notification-desc">Se ha publicado un anuncio para el curso virtual <b>DESARROLLO DE PÁGINAS WEB_SI_1.2_S_SEMESTRAL2026B</b>.</p>
+
+                                    <div class="notification-meta">
+                                        <small class="timestamp contextual-date" data-date="2026-09-18 20:39:20">18/09/2026 8:39:20 p.m.</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="notification" style="cursor:pointer" data-href="/EducacionVirtual/v3/CursosVirtuales/32369106/Detalle#Anuncios_86964" data-id="5090823" title="" data-toggle="" data-container="body">
+                            <div class="media">
+                                <div class="media-body">
+                                    
+                                        <span class="notification-title "><i class="fa fa-info-circle"></i> Publicación de anuncio</span>
+                                    <p class="notification-desc">Se ha publicado un anuncio para el curso virtual <b>HABILIDADES DE LA COMUNICACIÓN_CE.DG.CF.SOSI.MD.CI_1_S_SEMESTRAL2026B</b>.</p>
+
+                                    <div class="notification-meta">
+                                        <small class="timestamp contextual-date" data-date="2026-09-18 20:08:46">18/09/2026 8:08:46 p.m.</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="notification" style="cursor:pointer" data-href="/EducacionVirtual/v3/CursosVirtuales/43475684/Detalle#Anuncios_86817" data-id="5088502" title="" data-toggle="" data-container="body">
+                            <div class="media">
+                                <div class="media-body">
+                                    
+                                        <span class="notification-title "><i class="fa fa-info-circle"></i> Publicación de anuncio</span>
+                                    <p class="notification-desc">Se ha publicado un anuncio para el curso virtual <b>INFORMÁTICA_SI_1.2.4_S_SEMESTRAL2026B</b>.</p>
+
+                                    <div class="notification-meta">
+                                        <small class="timestamp contextual-date" data-date="2026-09-17 20:17:30">17/09/2026 8:17:30 p.m.</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="notification" style="cursor:pointer" data-href="/EducacionVirtual/v3/CursosVirtuales/20220303/Detalle#Anuncios_86816" data-id="5088481" title="" data-toggle="" data-container="body">
+                            <div class="media">
+                                <div class="media-body">
+                                    
+                                        <span class="notification-title "><i class="fa fa-info-circle"></i> Publicación de anuncio</span>
+                                    <p class="notification-desc">Se ha publicado un anuncio para el curso virtual <b>DESARROLLO DE PÁGINAS WEB_SI_1.2_S_SEMESTRAL2026B</b>.</p>
+
+                                    <div class="notification-meta">
+                                        <small class="timestamp contextual-date" data-date="2026-09-17 20:16:39">17/09/2026 8:16:39 p.m.</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="notification" style="cursor:pointer" data-href="/EducacionVirtual/v3/CursosVirtuales/90446641/Detalle#Anuncios_86802" data-id="5088197" title="" data-toggle="" data-container="body">
+                            <div class="media">
+                                <div class="media-body">
+                                    
+                                        <span class="notification-title "><i class="fa fa-info-circle"></i> Publicación de anuncio</span>
+                                    <p class="notification-desc">Se ha publicado un anuncio para el curso virtual <b>FUNDAMENTOS DE PROGRAMACIÓN_SI_1.2_S_Semestral2026A1</b>.</p>
+
+                                    <div class="notification-meta">
+                                        <small class="timestamp contextual-date" data-date="2026-09-17 18:39:00">17/09/2026 6:39:00 p.m.</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="notification" style="cursor:pointer" data-href="/EducacionVirtual/v3/CursosVirtuales/90446641/Detalle#Anuncios_86801" data-id="5088177" title="" data-toggle="" data-container="body">
+                            <div class="media">
+                                <div class="media-body">
+                                    
+                                        <span class="notification-title "><i class="fa fa-info-circle"></i> Publicación de anuncio</span>
+                                    <p class="notification-desc">Se ha publicado un anuncio para el curso virtual <b>FUNDAMENTOS DE PROGRAMACIÓN_SI_1.2_S_Semestral2026A1</b>.</p>
+
+                                    <div class="notification-meta">
+                                        <small class="timestamp contextual-date" data-date="2026-09-17 18:38:31">17/09/2026 6:38:31 p.m.</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="notification" style="cursor:pointer" data-href="/EducacionVirtual/v3/CursosVirtuales/20220303/Detalle#4_79406870" data-id="5084476" title="" data-toggle="" data-container="body">
+                            <div class="media">
+                                <div class="media-body">
+                                    
+                                        <span class="notification-title "><i class="fa fa-info-circle"></i> Nuevo recurso</span>
+                                    <p class="notification-desc">Se publicó un nuevo recurso <b>Arquitectura HTML Intermedio.</b> en el curso <b>DESARROLLO DE PÁGINAS WEB_SI_1.2_S_SEMESTRAL2026B</b>.</p>
+
+                                    <div class="notification-meta">
+                                        <small class="timestamp contextual-date" data-date="2026-09-15 00:05:50">15/09/2026 12:05:50 a.m.</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="notification" style="cursor:pointer" data-href="/EducacionVirtual/v3/CursosVirtuales/20220303/Detalle#7_13405150" data-id="5084457" title="" data-toggle="" data-container="body">
+                            <div class="media">
+                                <div class="media-body">
+                                    
+                                        <span class="notification-title "><i class="fa fa-info-circle"></i> Nuevo recurso</span>
+                                    <p class="notification-desc">Se publicó un nuevo recurso <b>Html visto en Clase</b> en el curso <b>DESARROLLO DE PÁGINAS WEB_SI_1.2_S_SEMESTRAL2026B</b>.</p>
+
+                                    <div class="notification-meta">
+                                        <small class="timestamp contextual-date" data-date="2026-09-14 23:58:22">14/09/2026 11:58:22 p.m.</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+            </ul>
+
+            <div class="dropdown-footer text-center">
+            </div><!-- /dropdown-footer -->
+        </div><!-- /dropdown-container -->
+    </li><!-- /dropdown -->
+
+
+
+            <li class="dropdown user-menu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                JUAN JOSE
+                                <b class="caret"></b>
+                            </a>
+                        <ul class="dropdown-menu">
+
+
+                            
+
+
+
+
+
+
+                            <li><a href="#acercaQ10" data-toggle="modal">Acerca de Q10</a></li>
+
+                                <li class="divider"></li>
+
+
+
+
+
+
+                            
+
+
+                                    <li><a href="/CambiarContrasena?identificacionUsuario=C.C.%201112728162&amp;nombreUsuario=ECHAVARRIA%20TONUZCO%20JUAN%20JOSE" class="modal-form">Cambiar contraseña</a></li>
+
+                            <li><a href="javascript:void($('#logoutForm').submit())">Cerrar sesión</a></li>
+                        </ul>
+            </li>
+        </ul>
+    </div>
+
+
+</nav>
+<!-- Modal -->
+<div class="modal fade" id="support">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Q10</h4>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <p><i class="icon-comments icon-4x"></i></p>
+                            <p>Chatea con nosotros</p>
+                        </div>
+                        <div class="col-lg-6">
+                            <p><i class="icon-bug icon-4x"></i></p>
+                            <p>Reporta un problema</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<!-- Modal -->
+<div class="modal fade" id="acercaQ10" style="overflow-y: hidden;">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Acerca de Q10</h4>
+            </div>
+            <div class="modal-body">
+                <div class="container estiloAcerca" style="width: 558px;">
+                    <div style="width: 100%; display: flex; justify-content: center; align-items: center; flex-direction: column;">
+                            <img style="width: 180px;" src="https://q10storage.blob.core.windows.net/q10academico-public/000000000/Resources/LogoQ10_SOlO.png?v=4" />
+                        <div class="col-lg-12 col-md-12 text-center">
+                            <a href="http://www.q10.com/" target="_blank">&copy; 2026 Q10 S.A.S </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<style>
+    .estiloAcerca .jumbotron {
+        margin-bottom: 23px;
+        padding-top: 32px;
+        padding-bottom: 28px;
+        padding-right: 26px;
+        padding-left: 41px;
+    }
+</style>
+
+<form action="/Salir" data-ajax="true" data-ajax-failure="jack.handleAjaxError" data-ajax-method="POST" data-ajax-success="onLogoutSuccess" id="logoutForm" method="post" style="display:none;"></form>
+<style>
+    .head-ent a,
+    .head-ent:hover a {
+        color: #969393 !important;
+        background-color: transparent !important;
+        cursor: default;
+        font-style: italic;
+    }
+
+    .ent-ul {
+        top: -41px !important;
+    }
+
+    a.change.disabled {
+        pointer-events: none;
+    }
+
+    .footer-censa {
+        width: 265px;
+        background-color: #EEEEEE;
+        position: absolute;
+        text-align: center;
+        font-size: 11px;
+        border: 1px solid #ccc;
+        border-top: none;
+        display: none;
+        z-index: 5;
+    }
+
+        .footer-censa > a {
+            padding: 5px;
+            display: block;
+        }
+
+    div.footer-censa.vis {
+        display: block;
+    }
+</style>
+
+
+
+
+
+<div class="container-full ">
+    <div class="row clearfix" style="margin-top:-20px;">
+        <div class="col-lg-12 col-md-12 main-col">
+            
+
+<div class="row messages hidden-print">
+    <div class="col-lg-12 col-md-12 messagesInner" data-spy="affix" data-offset-top="20">
+    </div>
+</div>
+            
+
+<div class="row wrapper">
+    <div id="sidebar-virtual" class="col-sm-3 col-xs-3 col-md-3 col-lg-3 sidebar-hide">
+        <div class="hidden-lg hidden-md" id="close-sidebar">
+            <i class="fa fa-times"></i>
+        </div>
+        <div id="section-menu">
+            <div style="display: flex; align-items: center; justify-content: center; height: 100%;">
+                <i class="fa fa-spinner fa-spin fa-3x"></i>
+            </div>
+        </div>
+        <div class="hidden-sm hidden-xs linebar-virtual">
+            <div id="collapsor" data-toggle="tooltip" title="Expandir" data-placement="right">
+                <i class="fa fa-angle-right"></i>
+            </div>
+        </div>
+    </div>
+    <div class="hidden-lg hidden-md linebar-virtual-mobile">
+        <div class="collapsor">
+            <i class="fa fa-chevron-right"></i>
+        </div>
+    </div>
+    <div id="body-content" class="col-xs-9 col-sm-9 col-lg-9 col-md-9 body-full">
+        <div id="section-body" class="edu-container">
+            <div id="alert-host" class="alert-host" aria-live="polite" aria-atomic="true"></div>
+            <div class="edv-form-loading">
+                <div>
+                    <i class="fa fa-spinner fa-spin fa-5x"></i>
+                </div>
+            </div>
+            <div id="load-container" class="edv-container">
+                
+
+
+            </div>
+            <div id="load-container-secundary" class="edv-container">
+            </div>
+            
+
+<div id="barra_navegacion" style="display: none;" data-bind="visible: visible() && Actual() && Elementos().length > 1">
+    <div class="div-material clearfix">
+
+        <div class="navigator-item pull-left text-left">
+            <div data-bind="visible: Anterior()">
+                <a data-bind="attr: { 'href': EnlaceAnterior()}, style: { cursor: AnteriorDisponible() ? 'pointer' : 'no-drop' }" class="open-body navigator-link">
+                    <i class="fa fa-angle-left navigator-icon"></i>
+                    <div class="navigator-direction" data-bind="css: { 'with-restriction-left': !AnteriorDisponible() }">
+
+                        <i class="fa fa-lock" data-bind="style: { 'display':!AnteriorDisponible() ? 'inline' : 'none' }" data-toggle="tooltip" data-container="body" title="Para acceder a este recurso primero debe completar las secciones obligatorias anteriores"></i>
+
+                        Anterior
+                    </div>
+                    <div class="navigator-text text-elipsis" data-bind="text: AnteriorDescripcion()"></div>
+                </a>
+            </div>
+        </div>
+
+        <div class="navigator-item pull-right text-right">
+            <div data-bind="visible: Siguiente()">
+                <a data-bind="attr: { 'href': EnlaceSiguiente() }, style: { cursor: SiguienteDisponible() ? 'pointer' : 'no-drop' }" class="open-body navigator-link">
+                    <i class="fa fa-angle-right navigator-icon"></i>
+                    <div class="navigator-direction" data-bind="css: { 'with-restriction-right': texto_restriccion() || !SiguienteDisponible() }">
+                        Siguiente
+
+                        <i class="fa fa-lock" data-bind="style: { 'display':!SiguienteDisponible() ? 'inline' : 'none' }" data-toggle="tooltip" data-container="body" title="Para acceder a este recurso primero debe completar las secciones obligatorias anteriores"></i>
+
+                        <!-- ko if: texto_restriccion() -->
+                        <i class="icon-alert-o-55" data-bind="attr: { 'title': texto_restriccion() }"></i>
+                        <!-- /ko -->
+                    </div>
+                    <div class="navigator-text text-elipsis" data-bind="text: SiguienteDescripcion()"></div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<style>
+
+    #barra_navegacion {
+        position: absolute;
+        bottom: 0px;
+        left: 0;
+        right: 0;
+    }
+
+        #barra_navegacion .div-material {
+            border: 1px solid #CCC;
+            border-radius: 4px;
+            background-color: white;
+            padding: 8px 20px;
+        }
+
+        #barra_navegacion .navigator-item {
+            width: 40%;
+        }
+
+        #barra_navegacion .navigator-link {
+            display: block;
+            text-decoration: none !important;
+        }
+
+        #barra_navegacion .navigator-icon,
+        #barra_navegacion .navigator-direction {
+            color: var(--institutional-color)
+        }
+
+            #barra_navegacion .navigator-direction.with-restriction-right {
+                color: #3C3D40 !important;
+                position: relative;
+                padding-right: 33px;
+            }
+
+                #barra_navegacion .navigator-direction.with-restriction-right i {
+                    position: absolute;
+                    margin-top: 1px;
+                    right: 18px;
+                }
+
+            #barra_navegacion .navigator-direction.with-restriction-left {
+                color: #3C3D40 !important;
+                position: relative;
+                padding-left: 36px;
+            }
+
+                #barra_navegacion .navigator-direction.with-restriction-left i {
+                    position: absolute;
+                    left: 20px;
+                }
+
+        #barra_navegacion .navigator-direction {
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 15px;
+        }
+
+        #barra_navegacion .navigator-icon {
+            font-size: 30px;
+            margin-top: -2px;
+        }
+
+        #barra_navegacion .navigator-item.pull-left .navigator-icon {
+            float: left;
+            margin-right: 10px;
+        }
+
+        #barra_navegacion .navigator-item.pull-right .navigator-icon {
+            float: right;
+            margin-left: 10px;
+        }
+
+        #barra_navegacion .navigator-text {
+            font-weight: bold;
+            color: #3C3D40 !important;
+            font-size: 11px;
+        }
+</style>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+        </div>
+            <div class="visible-lg visible-md ads-col" style="margin-top:4px; margin-right:4px; position:absolute; right:0;">
+
+
+                
+
+<div class="adds body">
+
+        <div id='div-gpt-ad-1552496341866-0' style='height:600px; width:160px;'>
+            <script>
+                googletag.cmd.push(function () { googletag.display('div-gpt-ad-1552496341866-0'); });
+            </script>
+        </div>
+</div>
+
+            </div>
+    </div>
+</div>
+
+
+
+
+
+
+    <div class="modal fade" id="modal-chat">
+        
+
+<div class="modal-dialog modal-wider ">
+    <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close " data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title">
+    Mensajes
+</h4>
+        </div>
+        <div class="modal-body">
+            
+
+
+
+<table class="table chat-table set-height">
+    <tbody style="height: 100%">
+        <tr style="height: 50px;">
+            <td class="background-header" style="width: 30%;vertical-align: middle;">
+                <div class="nueva-conversacion text-center" data-bind="visible: !Buscando()">
+                    <a href="#" style=" font-size: 15px;" data-bind="click: mostrarBusqueda"><i class="fa fa-comment"></i>&nbsp;Nueva Conversación</a>
+                </div>
+
+            <div class="nueva-conversacion-open" data-bind="visible: Buscando()">
+                <a href="#" data-bind="click: ocultarBusqueda" style="float: left;font-size: 20px;color: rgb(51, 51, 51);padding: 2px 8px 0;margin: -4px 0px 0px 5px;"><i class="fa fa-arrow-left"></i></a>
+                <span style="font-size: 17px;margin: 8px;">
+                    Nueva Conversación
+                </span>
+            </div>
+        </td>
+        <td class="chat-spacing background-header" data-bind="css: { 'background-header': ChatActual }" style="vertical-align: middle;">
+            <!-- ko if: ChatActual -->
+            <div class="chat-header">
+                <h4 data-bind="text: ChatActual.conper_per_nombre_completo_otro()" style="margin: 0;"></h4>
+                <p class="relacion conversacion" data-bind="text:ChatActual.relaciones()"></p>
+            </div>
+            <!-- /ko -->
+        </td>
+    </tr>
+    <tr>
+        <td rowspan="2" class="set-height" style="position:relative;">
+            <div style="overflow-y: auto;  height: 100%;padding: 0 1px;border-right: 1px solid #CCC;">
+
+                    <div class="text-center" style="padding: 10px;" data-bind="visible: Buscando()">
+                        <input type="text" id="filtroTexto" class="form-control" placeholder="Buscar Personas" data-bind="event: { 'keyup': busquedaPersonas } ">
+                    </div>
+                    <div data-bind="visible: Buscando()" style="position:relative;height: 80%;">
+                        <div class="conversaciones-buscar" data-bind="visible: !MostrarNoBusqueda()">
+                        </div>
+                        <div class="text-center" style="padding: 20px;" data-bind="visible: MostrarNoBusqueda()">
+                            Por favor ingrese el nombre de alguna persona.
+                        </div>
+                        <div class="form-loading-conversacion">
+                            <div>
+                                <i class="fa fa-spinner fa-spin fa-5x"></i>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="conversaciones-lista" data-bind="visible: !Buscando()">
+                        <div class="text-center" style="padding: 20px;" data-bind="visible: Conversaciones().length == 0">
+                            Actualmente no tiene ninguna conversación.
+                        </div>
+
+                        <div data-bind="foreach: { data: ConversacionesSorter }, visible: Conversaciones().length > 0" class="container-conversaciones">
+                                <div class="item-conversacion" data-bind="click: $root.SeleccionarChatActual, css: { 'chat-seleccionado': $root.ChatActual.conper_per_codigo_otro() == conper_per_codigo_otro(), 'mensajes-pendientes': TieneMensajesPendientes() }">
+    <div style="min-height: 21px;position:relative;">
+        <span class="time-conversacion pull-right" data-bind="text: TiempoUltimoMensaje(), attr: { title: con_fecha_ultima_actualizacion().format('L LT') }"></span>
+        <span class="person-conversacion text-elipsis" data-bind="text: conper_per_nombre_completo_otro()"></span>
+    </div>
+    <p class="msg-conversacion">
+        <span class="text-elipsis" data-bind="text: conmen_mensaje()">
+
+        </span>
+    </p>
+</div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td class="chat-spacing chat-background" data-bind="attr: { 'rowspan': ChatActivo() ? 1 : 2 }">
+                <div class="chat-list" data-modal-diff-max-height="170" style="overflow-y: auto;padding: 10px 20px;height: 100%;">
+                    <div>
+    <div data-bind="foreach: ChatActual.MensajesSorter ">
+        <!-- ko if: $index() == 0 -->
+        <div class="text-center" style="margin: 11px 0 20px;">
+            <span data-bind="text: DateMensaje(), attr: { title: conmen_fecha().format('L') }" style="font-size: 16px;"></span>
+        </div>
+        <!--/ko -->
+        <div class="chat-item" data-bind="css: { 'mi-mensaje': MensajePropio(), 'mensaje-otro': !MensajePropio(), 'siguiente-igual': $root.ChatActual.MensajesSorter().length-1 > $index() && $root.ChatActual.MensajesSorter()[$index()+1].MensajePropio() != MensajePropio() }">
+            <div class="clearfix">
+
+                
+
+                <div class="chat-text text-left">
+                    <span style="white-space:pre-wrap;word-break: break-word;" data-bind="text: conmen_mensaje()"></span>
+                    <span class="fake-spam"></span>
+                </div>
+                <div class="chat-time">
+                    <!-- ko if: MensajePropio() -->
+                    <!-- ko if: conmenvis_fecha_visualizacion() -->
+                    <svg class="pull-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 15" width="15" height="15"><path fill="#4FC3F7" d="M15.01 3.316l-.478-.372a.365.365 0 0 0-.51.063L8.666 9.879a.32.32 0 0 1-.484.033l-.358-.325a.319.319 0 0 0-.484.032l-.378.483a.418.418 0 0 0 .036.541l1.32 1.266c.143.14.361.125.484-.033l6.272-8.048a.366.366 0 0 0-.064-.512zm-4.1 0l-.478-.372a.365.365 0 0 0-.51.063L4.566 9.879a.32.32 0 0 1-.484.033L1.891 7.769a.366.366 0 0 0-.515.006l-.423.433a.364.364 0 0 0 .006.514l3.258 3.185c.143.14.361.125.484-.033l6.272-8.048a.365.365 0 0 0-.063-.51z"></path></svg>
+                    <!-- /ko -->
+                    <!-- ko if: !conmenvis_fecha_visualizacion() && (!estado_envio() || estado_envio() == '2')-->
+                    <svg class="pull-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 15" width="15" height="15"><path fill="#92A58C" d="M15.01 3.316l-.478-.372a.365.365 0 0 0-.51.063L8.666 9.879a.32.32 0 0 1-.484.033l-.358-.325a.319.319 0 0 0-.484.032l-.378.483a.418.418 0 0 0 .036.541l1.32 1.266c.143.14.361.125.484-.033l6.272-8.048a.366.366 0 0 0-.064-.512zm-4.1 0l-.478-.372a.365.365 0 0 0-.51.063L4.566 9.879a.32.32 0 0 1-.484.033L1.891 7.769a.366.366 0 0 0-.515.006l-.423.433a.364.364 0 0 0 .006.514l3.258 3.185c.143.14.361.125.484-.033l6.272-8.048a.365.365 0 0 0-.063-.51z"></path></svg>
+                    <!-- /ko -->
+                    <!-- ko if: estado_envio() == '1' || estado_envio() == '3'-->
+                    <i class="chat-icon" data-bind="attr: { 'class': EstadoMensaje() }"></i>
+                    <!-- /ko -->
+                    <!-- /ko -->
+                    <span class="pull-right" style="margin-right: 2px;" data-bind="text: TiempoMensaje(), attr: { title: conmen_fecha().format('L LT') }"></span>
+                </div>
+            </div>
+            <!-- ko if: estado_envio() == '3'-->
+            <span class="chat-fail">No es posible enviar el mensaje, por favor inténtelo nuevamente.</span>
+            <!-- /ko -->
+        </div>
+        <!-- ko if: $root.ChatActual.MensajesSorter().length-1 > $index()
+    && conmen_fecha().date() != $root.ChatActual.MensajesSorter()[$index()+1].conmen_fecha().date() -->
+        <div class="text-center" style="margin: 11px 0 20px;">
+            <span data-bind="text: $root.ChatActual.MensajesSorter()[$index()+1].DateMensaje(), attr: { title: $root.ChatActual.MensajesSorter()[$index()+1].conmen_fecha().format('L') }" style="font-size: 16px;"></span>
+        </div>
+        <!--/ko -->
+    </div>
+</div>
+
+
+                </div>
+                <div class="form-loading-mensajes">
+                    <div>
+                        <i class="fa fa-spinner fa-spin fa-5x"></i>
+                    </div>
+                </div>
+            </td>
+        </tr>
+
+        <!-- ko if: ChatActivo() -->
+        <tr style="height: 60px;">
+            <td class="chat-spacing">
+                <div class="chat-new-msg">
+                    <button href="#" class="btn btn-default btn-send pull-right" data-bind="click: ChatActual.AddMensaje"><i class="fa fa-send"></i> Enviar</button>
+                    <div class="form-group" data-bind="validationElement: ChatActual.NuevoMensaje, event: { keypress: ChatActual.CheckEnter }">
+                        <textarea type="text" class="form-control new-msg" data-bind="value: ChatActual.NuevoMensaje, hasFocus: isFocus" placeholder="Escriba un mensaje"></textarea>
+                        <span class="help-block" data-bind="validationMessage: ChatActual.NuevoMensaje"></span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <!-- /ko -->
+    </tbody>
+</table>
+
+
+<style>
+
+    .new-msg:focus {
+        box-shadow: none;
+        border-color: #CCC;
+    }
+
+    #modal-chat {
+        font-family: "Segoe UI", "Helvetica Neue", "Helvetica", "Lucida Grande", Arial, "Ubuntu", "Cantarell", "Fira Sans", sans-serif;
+        color: #262626;
+    }
+
+    .chat-background {
+        padding-right: 0px !important;
+        position: relative;
+        background-color: #e2f4ff;
+    }
+
+    .form-loading-conversacion, .form-loading-mensajes {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(255, 255, 255, 0.5);
+        display: none;
+    }
+
+        .form-loading-conversacion > div, .form-loading-mensajes > div {
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            margin-left: -33px;
+            width: 70px;
+        }
+
+        .form-loading-conversacion .fa, .form-loading-mensajes .fa {
+            color: #9C9A9A;
+        }
+
+    .busqueda-container .busqueda-group:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    .item-busqueda:hover {
+        text-decoration: none !important;
+        background-color: #dedbdb;
+    }
+
+    .item-busqueda {
+        border-bottom: 1px solid #CCC;
+        padding: 5px 10px;
+    }
+
+
+    .background-header {
+        background-color: #e6e6e6;
+    }
+
+    td.chat-spacing {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+
+    .nueva-conversacion-open {
+        padding: 13px 0 14px;
+        border-right: 1px solid #CCC;
+    }
+
+    .nueva-conversacion {
+        padding: 15px;
+        border-right: 1px solid #CCC;
+    }
+
+    #modal-chat .modal-body {
+        padding: 0px;
+        overflow-y: hidden !important;
+    }
+
+    .container-conversaciones .item-conversacion:not(:last-child) {
+        border-bottom: 1px solid #e6e6e6;
+    }
+
+    .container-conversaciones .item-conversacion {
+        padding: 10px 10px;
+        cursor: pointer !important;
+    }
+
+        .container-conversaciones .item-conversacion:hover {
+            background-color: #EEE;
+        }
+
+        .container-conversaciones .item-conversacion.chat-seleccionado {
+            background-color: #EEE;
+        }
+
+    .time-conversacion {
+        font-size: 11px;
+        margin-top: 3px;
+        color: rgba(0, 0, 0, 0.6);
+    }
+
+    .person-conversacion {
+        margin-right: 2px;
+        font-size: 15px;
+        position: absolute;
+        right: 55px;
+        left: 0;
+    }
+
+    .msg-conversacion {
+        margin: 0px;
+        color: rgba(0, 0, 0, 0.6);
+        position: relative;
+        min-height: 20px;
+    }
+
+        .msg-conversacion > .text-elipsis {
+            position: absolute;
+            right: 0;
+            left: 0;
+        }
+
+    .mensajes-pendientes .time-conversacion {
+        color: #262626;
+    }
+
+    .mensajes-pendientes .person-conversacion {
+        font-weight: 700;
+    }
+
+    .mensajes-pendientes .msg-conversacion {
+        font-weight: 500;
+        color: rgba(0, 0, 0, 0.9);
+    }
+
+    .chat-table {
+        margin-bottom: 0px;
+    }
+
+        .chat-table td {
+            padding: 0 !important;
+            border: none !important;
+        }
+
+    .chat-header {
+        padding-left: 10px;
+    }
+
+    .chat-list {
+    }
+
+        .chat-list .mi-mensaje {
+            text-align: right;
+            padding-left: 100px;
+        }
+
+            .chat-list .mi-mensaje > div {
+                background-color: #b2eff7;
+            }
+
+
+        .chat-list .mensaje-otro {
+            padding-right: 100px;
+        }
+
+            .chat-list .mensaje-otro > div {
+                background-color: #FFF;
+            }
+
+    .chat-item {
+        margin-bottom: 12px;
+    }
+
+        .chat-item:not(.siguiente-igual) {
+            margin-bottom: 2px;
+        }
+
+        .chat-item > div {
+            display: inline-block;
+            border-radius: 4px;
+            border: 1px solid #CCC;
+            padding: 3px 10px 5px;
+        }
+
+    .chat-text > span.fake-spam {
+        display: inline-block;
+        width: 70px;
+        margin: 0;
+        height: 0;
+    }
+
+    .chat-time {
+        font-size: 10px;
+        margin-top: -14px;
+    }
+
+        .chat-time > span {
+            color: rgba(0, 0, 0, 0.45);
+        }
+
+        .chat-time > i.fa {
+            float: right;
+            margin-top: 3px;
+            margin-left: 3px;
+        }
+
+            .chat-time > i.fa.shown {
+                color: #04d81e;
+            }
+
+    .chat-new-msg {
+        padding: 7px;
+    }
+
+        .chat-new-msg .form-group {
+            padding-right: 100px;
+            margin: 0px;
+        }
+
+    .chat-fail {
+        display: block;
+        font-size: 9px;
+        margin-bottom: 10px;
+        color: #cd0404;
+    }
+
+    .chat-icon .fa-times {
+        color: #cd0404;
+    }
+
+    .relacion {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+        .busqueda {
+            width: 230px;
+            color: #6D6D6D;
+        }
+        .conversacion {
+            width: 350px;
+            margin: 0px;
+            color: #6D6D6D;
+        }
+
+</style>
+        </div>
+    </div>
+</div>
+    </div>
+
+<form id="frm-log" target='_blank' method='POST' action="/Autenticar">
+    <input type='hidden' name='hash' />
+</form>
+
+
+
+
+    <div class="modal fade" id="master-modal"></div>
+    <div class="modal fade" id="secundary-modal"></div>
+    <div class="modal fade" id="extra-modal" style="margin-top: 40px;"></div>
+        <footer class="hidden-print">
+            <div class="container-fluid">
+                <p>
+                    &copy; Q10
+
+                </p>
+            </div>
+        </footer>
+
+    <script src="/bundles/jquery?v=iVHlqnNKiL7xcqRKhDRe_aPo3tzjcjhztZ5gQqOeGSg1"></script>
+
+    <script src="/bundles/jqueryval?v=-qvrR3Itf4Nk5CITtahXVvJppyOZOUOQewP-xeGYy_U1"></script>
+
+    <script src="/bundles/jqueryglobalize?v=03phBv1IjTUFbKozYYgVpOWPvDGZya5vz7NWnAQRPTo1"></script>
+
+    <script src="/bundles/bootstrap?v=ifqjQ4I6KabVcqt9-cVHO-YyH_H5__ulDCQgYWUeIUM1"></script>
+
+    <script src="/bundles/bootstrap-slider?v=GQOnQtqk5NfGMYtKAjAcJ8Ae5kMvreeHRNprtqjd35I1"></script>
+
+    <script src="/bundles/cookiesjs?v=CkWanZNZWnikGFr9iZ43nDYE37e_Ifyb1ULnIlP-CUk1"></script>
+
+    <script src="/bundles/typeahead?v=ti1ObsVyAF7x6PJ56GOnSa8w4rR1tSp66vq-uRsnNHA1"></script>
+
+    <script src="/bundles/bootstrap-select?v=jcFAhXImyfA4ZPO-TJY7xvexqdx-mWUuU_RKV8XGjg01"></script>
+
+    <script src="/bundles/selectize?v=rYWjvRtBL6cYCJK5aq7FiM-RcaCpcvUZOzJnjeKikg41"></script>
+
+    <script src="/bundles/formatCurrency?v=tkZRfpwoF92I_NFVq7STs-pdLdmB_c4kPuO6FdQbxYU1"></script>
+
+    <script src="/bundles/notifications?v=KcB9nq4-irv5-jM-WFXeiJiHOoMUbiBXzfua8gY-Xrw1"></script>
+
+    <script src="/signalr/hubs"></script>
+    <script src="/bundles/moment?v=rRIUTxajkAHZvU-RuGslAYe3nz9klIs_50vJ0z0TNcg1"></script>
+
+    <script src="/bundles/datetimepicker?v=RLoNRK6yjhvbtwRzInOixTd4EyYIV_YPjnbcORuEkf81"></script>
+
+    <script src="/bundles/fileupload?v=hlaXUPk4UMSiY-GNX4znfnz9XQaCg614M6bHUUuDT1k1"></script>
+
+    <script src="/bundles/plyr?v=myMmc3Y2zmaJ_6HtWfTgL1sZuToQwkxvQrEoO3-PBfE1"></script>
+
+    <script type="text/javascript">
+        var CKEDITOR_BASEPATH = '/scripts/ckeditor/';
+    </script>
+
+    <script src="/bundles/ckeditor?v=_InKorEytW7MN9wJB38-ckDLe_tF_xsnkHqlwPQ_J-Q1"></script>
+
+    <script src="/bundles/ckeditor/others?v=RulDJ-piCT5LFSjKQ7TYs5dGdv_MqJHF3yjPVhTBe6I1"></script>
+
+    <script src="/bundles/sweet-alert?v=NzSx3HM4LeEVu1Xr0rC2jY4Dm6FzOLGoni3MZi9zSx81"></script>
+
+    <script src="/bundles/jqueryfancybox?v=apcQYwjGmAWJ6Wgkj-11HQjmoo_CAXlLANYLvwjKSgs1"></script>
+
+    <script src="/bundles/dompurify?v=2cvTkUiubUwUZYOLtc4Jz8etH0V0gsd01FUKasvbvwI1"></script>
+
+    <script src="/bundles/app/main?v=d7stiySw0ie-FvJMJN0UyYc5bXSXDd8pXsyqAwFh4hA1"></script>
+
+    <script src="/bundles/app/guidedtour?v=WF9zVW1W7HguUAz07pfKyCtCZ5RDodh5cGCtJYfzZ3k1"></script>
+
+    <script src="/bundles/knockout?v=g0vHz5D0CAtuimLmp3zmBSsyYp-HUtcc-x3GCTTw0_U1"></script>
+
+
+    <script src="/bundles/hubspot?v=vRJR5Vhbjy9VbA2uMlcsOwYcpXk3olyVeVX9CxKbAIo1"></script>
+
+
+    <script>
+        $("document").ready(function () {
+            $('#link-masker').remove();
+        });
+    </script>
+
+    <script>
+        jack.dateFormat = 'D/MM/YYYY';
+        jack.timeFormat = 'h:mm a';
+    </script>
+    <script type="text/javascript">
+        jack.htLicense = 'b0e01-a3e40-f5174-2722d-95a53';
+        jack.Ckeditor5License = 'eyJhbGciOiJFUzI1NiJ9.eyJleHAiOjE3ODI0MzE5OTksImp0aSI6ImMxZmU1OGY3LTdkN2QtNDQxOS05ZjQzLTFjN2ZmZTk3NjY4YSIsImxpY2Vuc2VkSG9zdHMiOlsiKi5xMTAuY29tIiwiKi5henVyZXdlYnNpdGVzLm5ldCJdLCJkaXN0cmlidXRpb25DaGFubmVsIjpbInNoIiwiZHJ1cGFsIl0sIndoaXRlTGFiZWwiOnRydWUsImZlYXR1cmVzIjpbIkRSVVAiXSwidmMiOiJhODgyYmRjZSJ9.t1ppAHFdqIArEm-fZq9Wn_YUUlBuQ4M61CcMeizaYBl392fGefxVuBQSqWCHIeKS3xcrZpW0iWLcb2LcFI1iAg';
+    </script>
+
+        <script>
+            jack.AplentEntCodigo = '045449985633';
+            jack.momentTimeZone = "America/Bogota";
+            jack.setLocaleExtend('es-CO', 'COP', 0, false, 'es-CO');
+            jack.setCustomsText({"Diploma":"Diploma","Coordinador":"Coordinador","Prácticas Laborales":"Prácticas laborales","Indicadores de Logros":"Indicadores de desempeño","Período":"Período","Diploma graduado":"Diploma graduado","Práctica":"Práctica","Docentes":"Docentes","Aprendizajes Esenciales":"Aprendizajes esenciales","Pensión":"Cuota","Jornada":"Jornada","Fecha vencimiento documento":"Fecha vencimiento documento","Lugar de expedición del documento":"Lugar de expedición del documento","Hoja de Vida":"Hoja de vida","relacionada":"relacionada","Lugar de exped. Documento":"Lugar de exped. Documento","Tipos Indicadores Logros":"Tipos indicadores desempeño","Paz y Salvo":"Paz y salvo","Programa":"Programa","Docente":"Docente","Encuestas Prácticas Laborales":"Encuestas prácticas laborales","Periodo":"Período","Periodos":"Períodos","Requisitos":"Requisitos","Folio graduado":"Folio graduado","Curso Rotativo":"Curso rotativo","Cancelado por inasistencia":"Cancelado por inasistencia","Tipo de programa":"Tipo de programa","Nit":"NIT","Evaluaciones Cursos Rotativos":"Evaluaciones cursos rotativos","Cuantitativo":"Cuantitativo","Tipo Indicador":"Tipo indicador","Acta graduado":"Acta graduado","Imprimir Información Práctica":"Imprimir información práctica","Homologar":"Homologar","Requisitos de Matrícula":"Requisitos de matrícula","Las Jornadas":"Las jornadas","Fecha Exped.":"Fecha Exped.","Asignaturas Relacionadas":"Asignaturas relacionadas","Asignaturas":"Asignaturas","La Asignatura":"La asignatura","Niveles":"Niveles","Fecha expedición documento":"Fecha expedición documento","Práctica Laboral":"Práctica laboral","Asignatura":"Asignatura","Del programa":"Del programa","Requisito de Grado":"Requisito de grado","Asignatura Relacionada":"Asignatura relacionada","Homologación":"Homologación","El Programa":"El programa","Sedes - Jornadas":"Sedes - jornadas","Parámetros Evaluación Prácticas":"Parámetros evaluación prácticas","Homologada":"Homologada","Recuperación":"Recuperación","Aprendizaje Esencial":"Aprendizaje esencial","Nivel":"Nivel","Prácticas":"Prácticas","Departamento":"Departamento","Estudiantes por Estado de Practica":"Estudiantes por Estado de practica","Docentes de Apoyo":"Docentes de apoyo","Acta":"Acta","Acudiente":"Familiar","Tipos de programas":"Tipos de programas","Tipos Indicadores de Logros":"Tipos indicadores de desempeño","Estudiantes por asesor de Prácticas":"Estudiantes por asesor de prácticas","Rec":"Rec","El docente":"El docente","Notas Crédito":"Notas crédito","Fecha Exped. Documento":"Fecha Exped. Documento","Fecha Venc.":"Fecha Venc.","Indicador de Logro":"Indicador de desempeño","Sedes - Jornadas - Programas":"Sedes - jornadas - programas","Estudiantes por Estado de Practica - Competencias":"Estudiantes por estado de practica - Competencias","Fecha de expedición del documento":"Fecha de expedición del documento","Sede Jornada":"Sede Jornada","Copiar Indicadores de Logro":"Copiar indicadores de desempeño","Folio":"Folio","Lugar de expedición documento":"Lugar de expedición documento","Las Asignaturas":"Las asignaturas","Pagaré":"Pagaré","Evaluaciones":"Evaluaciones","Tipos Pensión":"Tipos cuotas","Prog":"Prog","Requisito de Matrícula":"Requisito de matrícula","Requisitos de Grado":"Requisitos de grado","Tipos de Seguimientos Práctica":"Tipos de seguimientos práctica","Registrar Acudiente":"Registrar acudiente","La Jornada":"La jornada","Areas - Asignaturas":"Areas - Asignaturas","Nota Crédito":"Nota crédito","Sede - Jornada":"Sede - jornada","Fecha Venc. Documento":"Fecha Venc. Documento","Municipio":"Municipio","Cursos Rotativos":"Cursos rotativos","Porcentaje de CREE":"Porcentaje de CREE","Acudientes":"Familiares","Jornadas":"Jornadas","Recuperaciones":"Recuperaciones","Programas":"Programas"});
+            jack.setCurrencyCulture({"COP":"es-CO","USD":"en-US","EUR":"es-ES","PAB":"es-PA","PEN":"es-PE","CRC":"es-CR","GTQ":"es-GT","ARS":"es-AR","CLP":"es-CL","MXN":"es-MX","BOB":"es-BO","PYG":"es-PY","UYU":"es-UY","HNL":"es-HN","DOP":"es-DO","VEF":"es-VE","NIO":"es-NI","ANG":"nl-CW"});
+        </script>
+
+
+    
+    
+    
+
+
+    <script>
+
+        const actualizarCacheAutenticacionImpersonal = "False" === "True";
+
+         function onLogoutSuccessInteractuar() {
+             localStorage.setItem('LOGOUT-URL', "https://interactuar.q10.com");
+             localStorage.removeItem("zendesk-jwt");
+         }
+
+         function onLogoutSuccess(data) {
+             location.href = data.url;
+             localStorage.setItem('LOGOUT-URL', data.url);
+             localStorage.removeItem("zendesk-jwt");
+         }
+
+         $('.seleccion-rol').on("click", function (e) {
+             var id = $(this).data('id');
+
+             $.ajax({
+                 url: '/cambiarrol',
+                 data: {
+                     id: id,
+                     actualizarCacheAutenticacionImpersonal: actualizarCacheAutenticacionImpersonal
+                 },
+                 type: 'POST',
+                 success: function () {
+                     location.replace('/');
+                 },
+                 error: jack.handleAjaxError
+             });
+
+             e.preventDefault();
+         });
+
+         $('.limpiar-cache-master').on("click", function (e) {
+             e.preventDefault();
+
+             jack.confirm("Se actualizará el caché en Jack. ¿Está seguro que desea continuar?", "Actualizar caché - Master", function () {
+                 var $btn = $('.limpiar-cache-master');
+                 $btn.addClass('disabled').prop('disabled', true);
+
+                 $.ajax({
+                     url: '/Q10/LimpiarCacheMaster',
+                     type: 'POST',
+                     success: function (data) {
+                         jack.showSuccessMessage(data.mensaje);
+                     },
+                     error: jack.handleAjaxError,
+                     complete: function () {
+                         $btn.removeClass('disabled').prop('disabled', false);
+                     }
+                 });
+             });
+         });
+
+         $('.seleccion-estudiante').on("click", function (e) {
+             var id = $(this).data('id');
+
+             $.ajax({
+                 url: '/CambiarEstudianteReferido',
+                 data: { id: id },
+                 type: 'POST',
+                 success: function () {
+                     location.reload();
+                 },
+                 error: jack.handleAjaxError
+             });
+
+             e.preventDefault();
+         });
+
+         $(".search-form.censa").on("click", ".search-btn", function (e) {
+             $(".search-form.censa").submit();
+             return false;
+         });
+
+         $(".search-form.formPers").on("click", ".search-btn", function (e) {
+             //Se obtiene el texto para buscar por el
+             $this = $(this);
+             var texto = $(".search-form.formPers").find("input.searchPers.tt-input").val();
+             let textoSanitizado = jack.sanitizeInput(texto);
+             var url = $this.attr("href") + (textoSanitizado ? "?texto=" + textoSanitizado : "");
+             $this.attr("href", url);
+         });
+
+         $("input[name='text-search']").on("focus", function () {
+             $("div.footer-censa").addClass("vis");
+         });
+
+         $("input[name='text-search']").on("focusout", function () {
+             setTimeout(function () {
+                 $("div.footer-censa").removeClass("vis");
+             }, 500);
+         });
+
+         $(".search-form.censa").on("submit", function () {
+
+             var busqueda = $("input[name='text-search']").val();
+
+             if (busqueda) {
+                 $.ajax({
+                     url: '/Personas/BuscarPersonaIdentificacion',
+                     data: { txt: busqueda },
+                     type: 'Get',
+                     success: function (data) {
+                         if (data) {
+                             if (data.indexOf("Lista") != -1) {
+                                 jack.openModal(data);
+                             } else {
+                                 location.href = data;
+                             }
+                         } else {
+                             jack.alert("No se encontró ninguna persona con la identificación especificada.")
+                         }
+
+                         $("input[name='text-search']").val(null);
+
+                     }
+                 });
+             } else {
+                 jack.alert("Por favor ingrese una identificación para realizar la búsqueda.");
+             }
+             return false;
+         });
+
+
+         $(".capacitacion-q10").on("click", function (e) {
+
+             let url = '/Q10/IngresarCapacitacionQ10';
+
+             $.ajax({
+                 url: url,
+                 type: 'POST',
+                 success: function (data) {
+                     let formCapacitacion = document.createElement("form");
+                     formCapacitacion.method = "POST";
+                     formCapacitacion.action = data.action;
+                     formCapacitacion.target = "_blank"; //Se abre en una nueva pestaña
+
+                     let input = document.createElement("input");
+                     input.type = "hidden";
+                     input.name = "hash";
+                     input.value = data.hash;
+
+                     formCapacitacion.appendChild(input);
+
+                     document.body.appendChild(formCapacitacion);
+                     formCapacitacion.submit();
+
+                     document.body.removeChild(formCapacitacion);
+                 },
+                 error: function (xhr, status, error) {
+                     jack.showErrorMessage("El usuario no se encuentra autorizado para ingresar a la institución de capacitación.");
+                 }
+             });
+
+             e.preventDefault();
+         });
+
+    </script>
+
+<script src="/bundles/azurestorage?v=QrLzwI-mcXxyMrceNw4dj5UlNBt10ZBDtaVsXuIJ7Jw1"></script>
+<script src="/bundles/hls?v=kfFx9nug3al8iDOSa-IciflEXdVa9vEUNan-_0eCSAU1"></script>
+<script src="/bundles/app/notificaciones?v=tERdqsEThWhPwVxWNJF1toYV1LEBCbHdUhR_XMZJWmk1"></script>
+<script src="/bundles/app/chat2?v=Qn8huTRySwkD33KQBiIT5_zQbCIoI81CjOKvsRxvgHk1"></script>
+
+<script>jack.chat.setPersona('117910449621')</script>
+
+
+    
+    <script src="/bundles/app/mundialR?v=kgfmeAzQqL8Vz_0GcEzgbt3-LeGntYClpKEGuOgLBVI1"></script>
+
+    
+	<script src="/bundles/app/shared/educacionvirtual?v=trt-ehS5Hpyxnpe-71eh5lZs-OaGsA4rLvDZN3w-kCc1"></script>
+
+	<script src="/bundles/ckeditor5470?v=J8eHPLyxju8cAVttz4Ndk1hZ1GBnojCoYhGRJBowGno1"></script>
+
+	<script src="/bundles/app/dragula?v=_7bL4FsEXyVn2sQwzPN14l_tX-m-0J97PYnZ6kY3EoE1"></script>
+
+	<script src="/bundles/highcharts?v=LQhiSO7zs64fYRAUAwdrGOUCzofBz7HAVHFj3Ysf0cU1"></script>
+
+	<script src="/bundles/bootstrapswitch?v=Dr9fNWA6kalPpSHJYiLIRiZGkXEQ5mFmTARjAC129rI1"></script>
+
+	<script src="/bundles/daterangepicker?v=uq8-Sig8AjE_Osg9uLfVSRh0l8UrLBkOeRJEtHp0Ymc1"></script>
+
+	<script src="/bundles/infiniteScroll?v=8J3Xc5Ru4zkgYhOtYt_EXnjxzN6JvlDueXWDB9ThDy01"></script>
+
+	<script src="/bundles/app/educacionvirtual/descarga-archivos?v=ipLDmQKcA4D7x4UkM_b8BeqlZtSJgzuIZtKmn51JGL41"></script>
+
+	<script type="text/javascript">
+        CKFinder.basePath = `${window.location.origin}/scripts/ckeditor5470/plugins/ckfinder/`;
+        jack.educacionvirtual.panelcontrol.setCursoVirtual("20220303", "Anuncios");
+        jack.educacionvirtual.panelcontrol.setModoPrevisualizar(false);
+        jack.educacionvirtual.panelcontrol.loadFullMenuLateral();
+    </script>
+
+        <script>
+            jack.educacionvirtual.navegacion.setModel({"TipoNavegacion":"Recursos","HashActual":"Anuncios","Elementos":[{"id":"40297784","descripcion":"Fundamentos HTML","disponible":true,"hash":"4_40297784"},{"id":"24448307","descripcion":"HTML en 15 Minutos","disponible":true,"hash":"2_24448307"},{"id":"13405150","descripcion":"Html visto en Clase","disponible":true,"hash":"7_13405150"},{"id":"79406870","descripcion":"Arquitectura HTML Intermedio.","disponible":true,"hash":"4_79406870"},{"id":"17470972","descripcion":"Guía Desarrollo de Páginas Web","disponible":true,"hash":"4_17470972"},{"id":"15298374","descripcion":"Parcial Paginas Web vale 20%","disponible":true,"hash":"7_15298374"},{"id":"66374713","descripcion":"Tarea Pagina Web ","disponible":true,"hash":"5_66374713"},{"id":"99254087","descripcion":"Semana 6 Arrays y Objetos","disponible":true,"hash":"2_99254087"},{"id":"14548242","descripcion":"Semana 6 Validación de Formularios Js","disponible":true,"hash":"2_14548242"},{"id":"14975089","descripcion":"Semana 6 Fundamentos Javascript","disponible":true,"hash":"4_14975089"},{"id":"65623020","descripcion":"Semana 6 Proyectos Interactivos Javascript","disponible":true,"hash":"4_65623020"},{"id":"17854541","descripcion":"Semana 7 Subir Página web a Github Pages","disponible":true,"hash":"2_17854541"},{"id":"15215056","descripcion":"Como Subir Página web a Github","disponible":true,"hash":"4_15215056"}]});
+        </script>
+
+    <script>
+        function validarActivacionBoton() {
+            var check = $("#confirmacion").is(":checked");
+            var $btnSubmit = $("#submit-btn");
+
+            if (check) {
+                $btnSubmit.removeAttr("disabled");
+            } else {
+                $btnSubmit.attr("disabled", "disabled");
+            }
+        }
+    </script>
+
+    <script>
+        $('#section-menu').on("click", ".div-link-2", function (e) {
+            if (!$(e.target).hasClass("open-dropdown")) {
+                location.href = $(".div-link-2").data("href");
+            }
+        });
+
+        $("#section-menu").on("click", "#descargar-cert", (e) => {
+            GenerarCertificadoEdv2("#descargar-cert");
+            e.preventDefault();
+        });
+
+        $('#section-menu').on("click", "#PrevisualizarEstudiante", function () {
+            jack.educacionvirtual.panelcontrol.loadFullMenuLateral();
+        });
+
+        $('#section-menu').on("click", "#PrevisualizarDocente", function () {
+            jack.educacionvirtual.panelcontrol.loadFullMenuLateral();
+        });
+
+        $('#section-menu').on("click", "#contenidoSubsecciones", function () {
+            jack.educacionvirtual.panelcontrol.loadRecursosLateral();
+        });
+
+        $("#section-menu-mobile").on("click", "#descargar-cert-mobile", (e) => {
+            GenerarCertificadoEdv2("#descargar-cert-mobile");
+            e.preventDefault();
+        });
+
+        function GenerarCertificadoEdv2(id) {
+            $(id).button("loading");
+
+            var urlDescargarCert = "/EducacionVirtual/v3/Certificados/DescargarCertificado";
+
+            $.ajax(
+                {
+                    url: urlDescargarCert,
+                    type: "POST",
+                    data: { curso: "20220303" },
+                    success: (data) => {
+                        jack.openModal(data);
+                        setTimeout(() => {
+                            $(id).button("reset");
+                        }, 2000);
+                    },
+                    error: function (xhr, status, error) {
+                        jack.handleAjaxError(xhr, status, error);
+                        $(id).button("reset");
+                    }
+                }
+            );
+        }
+
+        $("#collapsor").on('click', () => {
+            const collapsor = $("#collapsor");
+
+            // Verifica que el atributo aria-describedby exista
+            const tooltipId = collapsor.attr("aria-describedby");
+
+            if (tooltipId) {
+                const tooltipElement = $(`#${tooltipId}`);
+                const tooltipText = collapsor.attr('data-original-title');
+
+                // Oculta el tooltip, actualiza el texto y luego la muestra nuevamente
+                tooltipElement.fadeOut(0, () => {
+                    tooltipElement.find(".tooltip-inner").text(tooltipText);
+                    tooltipElement.fadeIn(300);
+                });
+            }
+		});
+    //Se vuelven a activar manualmente los eventos y estilos de affix de bootstrap, dado que al mostrar la vista de loading en alguna acción exitosa, esta los mata y ya no calculan bien posiciones. 
+    //Al activarse nuevamente, seguirá aplicandose el calculo de la posición de las alertas según el scroll de la página
+    $(document).ajaxComplete(function () {
+        const $mensajes = $('.messagesInner');
+
+        $mensajes.filter(':visible').each(function () { //Solo se hace si el loading ya se dejó de mostrar y ya se muestra el contenedor de mensajes
+            const $this = $(this);
+
+            $this.removeData('bs.affix')
+                .removeClass('affix affix-top affix-bottom')
+                .attr('style', '');
+
+            if (typeof $this.affix === 'function') {
+                $this.affix({
+                    offset: { top: 20 }
+                });
+
+                window.requestAnimationFrame(() => {
+                    if (document.body.contains($this[0])) {
+                        $this.affix('checkPosition');
+                    }
+                });
+            }
+        });
+    });
+    </script>
+
+<script src="/bundles/app/shared/educacionvirtual/tiempoPermanencia?v=p4Odff_l9c1WlAyFpVwDziP_40r6zn71eUwCEMMzgpo1"></script>
+
+    
+
+
+    <script>
+        window.addEventListener('storage', function (event) {
+            if (event.key == 'LOGOUT-URL' && event.newValue) {
+                location.href = event.newValue;
+                localStorage.setItem('LOGOUT-URL', '');
+                this.localStorage.clear();
+            }
+        });
+    </script>
+
+</body>
+</html>
